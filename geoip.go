@@ -352,9 +352,9 @@ func (gi *GeoIP) GetCountry(ip string) (cc string, netmask int) {
 	return
 }
 
-// GetCountry_v6 works the same as GetCountry except for IPv6 addresses, be sure to
+// GetCountryV6 works the same as GetCountry except for IPv6 addresses, be sure to
 // load a database with IPv6 data to get any results.
-func (gi *GeoIP) GetCountry_v6(ip string) (cc string, netmask int) {
+func (gi *GeoIP) GetCountryV6(ip string) (cc string, netmask int) {
 	if gi.db == nil {
 		return
 	}
